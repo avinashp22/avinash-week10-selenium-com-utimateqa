@@ -48,6 +48,12 @@ public class ComUtimateqa {
         //NOT WORKING -   WebElement loginLink = driver.findElement(By.className("button button-primary g-recaptcha")); // hover to login button
         //NOT WORKING -   loginLink.click(); // click on link
 
+        //NOT WORKING -     WebElement loginLink = driver.findElement(By.xpath("//*[@id=\"sign_in_894c356c61\"]/div[5]/button")); // hover to login button
+        //NOT WORKING -     loginLink.click(); // click on link
+
+       WebElement loginLink = driver.findElement(By.partialLinkText("Sign")); // hover to login button
+       loginLink.click(); // click on link
+
 
         driver.navigate().to(baseURL); // tell driver to navigate to base url
 
